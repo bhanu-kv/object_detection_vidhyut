@@ -351,7 +351,7 @@ class ObjectDetectionNode(Node):
     
                 cv.putText(rgb, self.classNames[cls], org, font, fontScale, color, thickness)
         
-                if coordinates:
+                if coordinates and (self.classNames[cls] == "people" or self.classNames[cls] == "stop"):
                     if not coordinates[0]:
                         continue
                     

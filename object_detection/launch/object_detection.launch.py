@@ -13,5 +13,6 @@ def generate_launch_description():
         DeclareLaunchArgument(
             'use_sim_time',
             default_value='true',),
-        Node(package='object_detection', executable='main.py', output='screen'),
+        # Node(package='object_detection', executable='main.py', output='screen'),
+        Node(package='object_detection', executable='webcam_sim.py', output='screen')
     ])

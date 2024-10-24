@@ -29,7 +29,7 @@ install(
 install(
   PROGRAMS
   object_detection/main.py
-  object_detection/horizontal_line.py
+  object_detection/webcam_sim.py
   DESTINATION lib/${PROJECT_NAME}
 )
 if(BUILD_TESTING)
